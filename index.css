@@ -182,7 +182,7 @@ h1{
     max-width: 40%;
 } 
 }
-@media screen and (max-width:950px){
+@media screen and (max-width:970px){
 .menu{
     display: none;
 }
