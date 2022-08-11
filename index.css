@@ -6,6 +6,7 @@
 }
 body {
     font-family: 'Tiro Gurmukhi', serif;
+    overflow-x: hidden;
 }
 h1{
     font-family: 'Oleo Script Swash Caps', cursive;
@@ -75,6 +76,7 @@ h1{
 .img-headline{
     margin-right: 10%;
     text-align: center;
+    max-width: 90%;
 }
 .headline p{
     color: gray;
@@ -120,8 +122,6 @@ h1{
     cursor: pointer;
     height: 350px;
     overflow:hidden;
-    
-    
 }
 .caixa h3{
     margin: 30px 0;
@@ -143,7 +143,6 @@ h1{
 }
 .rodape {
     display: flex;
-    width: 100%;
     border-top:5px solid #FF2978;
     background-image: linear-gradient(180deg,#180f4A,#090422, black) ;
     color: white;
@@ -167,41 +166,43 @@ h1{
     bottom: 10px;
     right: 10px;
 }
-
 /* responsivo */
 @media screen and (max-width:1150px){
-    .caixa {
-        flex-flow: column wrap;
-        align-items: center;
+.caixa {
+    flex-flow: column wrap;
+    align-items: center;
+}
+.caixa div{
+    width: 80%;
+    margin: 5%;
+    height: auto;
+} 
+.img-headline{
+    max-width: 40%;
+} 
+}
+@media screen and (max-width:950px){
+.menu{
+    display: none;
+}
+.logo{
+    text-align: center;
+    margin: 0;
+}
+.navbar{
+    position: relative;
     }
-    .caixa div{
-        width: 40%;
-        margin: 5%;
-        height: auto;
-    }  
-    }
-    @media screen and (max-width:950px){
-    .menu{
-        display: none;
-    }
-    .logo{
-        text-align: center;
-        margin: 0;
-    }
-    .navbar{
-        position: relative;
-    }
-    .header{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin:5%;
-    }
-    footer img{
-        display: none;
-    }
-    }
+.header{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:5% 5%;
+        
+}
+footer img{
+   display: none;
+}
 
-
+}
