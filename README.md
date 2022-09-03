@@ -3,4 +3,4 @@
 ![Arquivo](img/siteResponsivo.jpg)
 Modelo de site responsivo desenvolvido com ***HTML*** e ***CSS***.  
 - **GITHUB** - [Celso Tavares](https://github.com/CelsoTavares) 
-- **LINKEDIN** - [Celso Tavares](linkedin.com/in/celsotavaresjunior) 
+- **LINKEDIN** - [Celso Tavares](https://www.linkedin.com/in/celsotavaresjunior/) 
