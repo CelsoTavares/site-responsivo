@@ -1,4 +1,4 @@
-# Modelo de Site-responsivo para todos tipos de telas
+# Modelo de Site Responsivo Para Todos Tipos De Telas
 * ### Objetivo
     #### Criar um modelo de site responsivo que se ajuste a diferentes telas.
 ![Arquivo](img/siteResponsivo.jpg)
