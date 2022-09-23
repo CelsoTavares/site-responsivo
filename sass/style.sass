@@ -1,0 +1,212 @@
+@use 'variables'
+@use 'mixins'
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Tiro+Gurmukhi&display=swap')
+
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Tiro Gurmukhi' serif
+    overflow-x: hidden
+    
+h1
+    font-family: 'Oleo Script Swash Caps', cursive
+    color: variables.$dark-blue
+    
+.navbar
+    height: 100px
+    background: white
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    position: fixed
+    width: 100%
+    font-weight: 700
+    
+    @include mixins.responsivo
+        position: relative
+
+.logo
+    flex: 20%
+    text-align: left
+    color: variables.$dark-blue
+    font-size: 22px
+    margin-left: 10%
+
+    @include mixins.responsivo
+    text-align: center
+    margin: 0
+    
+.menu
+    flex: 60%
+    text-align: right
+    margin-right: 10%
+
+    @include mixins.responsivo
+        display: none
+
+    a 
+        color: variables.$dark-blue
+        font-size: 20px
+        padding: 20px 16px
+        text-decoration: none
+
+        &:hover 
+            color: variables.$pink
+            border-top:  solid variables.$dark-blue
+
+#botao
+    background: variables.$dark-blue
+    color: white
+    border-radius: 5px
+    padding: 10px 25px
+    margin-left: 80px
+
+    &:hover
+        border: none
+        background: variables.$pink
+
+.header
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 100px
+
+    @include mixins.responsivo
+        display: flex
+        flex-flow: column wrap
+        justify-content: center
+        align-items: center
+        text-align: center
+        margin: 0
+
+.headline
+    margin-left: 10%
+    flex: 40%
+    
+    @include mixins.responsivo
+        margin: 5% 10%
+
+    h2
+        color: variables.$dark-blue
+        font-weight: 900
+        
+    p
+        color: gray
+        text-align: justify
+        padding: 20px 0
+            
+.achou
+    letter-spacing: 15px
+
+.img-headline
+    margin-right: 10%
+    text-align: center
+
+    img
+        max-width: 90%
+ 
+.contact-btn
+    display: inline-block
+    background: variables.$pink
+    padding: 20px
+    color: white
+    text-decoration: none
+    text-transform: uppercase
+    border-radius: 5px
+    font-weight: bold
+
+    &:hover
+        background: variables.$dark-blue
+
+.section
+    margin: 10% 5%
+
+.podemos
+    text-align: center
+    color: variables.$dark-blue
+    font-size: 50px
+    font-weight: bold
+    margin-top: 100px
+
+.caixa
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    justify-content: center
+
+    @include mixins.ajuste
+        flex-flow: column wrap
+        align-items: center
+
+    div
+        margin: 90px 20px
+        padding: 30px
+        width: 26%
+        text-align: center
+        border: 1px solid variables.$pink
+        color: variables.$dark-blue
+        border-radius: 10px
+        cursor: pointer
+        height: 350px
+        overflow: hidden
+
+        @include mixins.ajuste
+            width: 80%
+            margin: 5%
+            height: auto
+
+        &:hover
+            background: variables.$pink
+            color: white
+                    
+            .sumir
+                display: none
+                 
+            .oculto
+                display: block
+                padding: 10px    
+    h3
+    margin: 30px 0
+    font-weight: 900
+    
+.oculto
+    display: none
+
+.rodape 
+    display: flex
+    border-top:5px solid  variables.$pink
+    background-image: linear-gradient(180deg, variables.$dark-blue,#090422, black) 
+    color: white
+    height: 400px
+    flex-flow: column wrap
+    justify-content: center
+    align-items: center
+
+    h3
+        font-family: 'Oleo Script Swash Caps', cursive
+        font-size: 35px
+        margin-bottom: 20px
+        margin-top: 50px
+
+    p
+        margin-bottom: 100px
+
+    img
+        width: 100px
+        position: fixed
+        bottom: 10px
+        right: 10px
+
+@media screen and (max-width: 1150px)
+    .img-headline
+        max-width: 40%
+
+@media screen and (max-width: 1000px)
+    .menu
+        display: none
+    footer img
+        display: none
