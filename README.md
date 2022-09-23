@@ -5,7 +5,7 @@
 * ## Sobre
     #### Neste site foram utilizados position fixed no menu e ícone do zap, com o uso da mesma, faz com que seus elementos fiquem fixo e em suas posições mesmo com a rolagem da barra, também utilizei flexbox e media query para o ajuste da tela. 
 * ## Tecnologias 
-    #### HTML5 e CSS3
+    #### HTML5, CSS3 e SASS
 * ## Links
     #### [Projeto](https://celsotavares.github.io/Site-responsivo/)
 * ## Autor
