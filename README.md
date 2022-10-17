@@ -1,6 +1,5 @@
 # Modelo de Site Responsivo
-* ## Objetivo
-    #### Criar um modelo de site responsivo.
+
 ![Arquivo](img/siteResponsivo.jpg)
 * ## Sobre
     #### Neste site foram utilizados position fixed no menu e na imagem zap, também utilizei flexbox e media query para o ajuste da tela. 
